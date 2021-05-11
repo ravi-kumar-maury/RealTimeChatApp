@@ -20,7 +20,7 @@ socket.on('user-disconnected',name1=>{
 })
 
 
-socket.on('chat-message',data =>{
+socket.on('send-chat-message',data =>{
     appendMessage(`${data.name}:${data.message}`);
 })
 
