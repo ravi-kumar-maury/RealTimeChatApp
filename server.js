@@ -18,7 +18,7 @@ io.on('connection',(socket)=>{
         socket.broadcast.emit('user-connected', name1)        
         });
     socket.on('send-chat-message',m=>{  //name also have to be published
-            socket.broadcast.emit(`${users[socket.id]} : ${m}`)
+            socket.broadcast.emit('chat-message',`${users[socket.id]} : ${m}`)
         })
     
         

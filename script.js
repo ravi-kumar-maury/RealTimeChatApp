@@ -20,8 +20,8 @@ socket.on('user-disconnected',name1=>{
 })
 
 
-socket.on('send-chat-message',data =>{
-    appendMessage(`${data.name}:${data.message}`);
+socket.on('chat-message',data =>{
+    appendMessage(data);
 })
 
 form.addEventListener('submit',e=>{
