@@ -2,7 +2,7 @@ const socket = io('http://localhost:3000')
 
 var message = document.getElementById('message-input');
 var input = document.getElementById('send-button');
-var container =document.getElementsByClassName('message-container')
+var container =document.getElementById('message-container')
 
 const name1 = prompt("New Guys ? please enter your name")
 
