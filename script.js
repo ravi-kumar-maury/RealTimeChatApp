@@ -3,6 +3,7 @@ const socket = io('http://localhost:3000')
 var message = document.getElementById('message-input');
 var input = document.getElementById('send-button');
 var container =document.getElementById('message-container')
+var form  = document.getElementById('form')
 
 const name1 = prompt("New Guys ? please enter your name")
 
@@ -23,7 +24,7 @@ socket.on('chat-message',data =>{
     appendMessage(`${data.name}:${data.message}`);
 })
 
-container.addEventListener('submit',e=>{
+form.addEventListener('submit',e=>{
     e.preventDefault()
     const m = message.value;
     appendMessage(`You : ${m}`)
