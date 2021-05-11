@@ -38,5 +38,5 @@ function appendMessage(mess)
 {
    const  newDiv = document.createElement('div');
    newDiv.innerText = mess
-   document.append(newDiv)
+   container.append(newDiv)
 }
